@@ -21,6 +21,7 @@ html {
 
 main {
     width: 100%;
+    padding: 1rem;
 }
 
 ul {
@@ -143,6 +144,7 @@ footer {
     text-align: center;
     border-top: 0.25rem solid #866e5c;
     box-shadow: 1px 1px 20px #866e5c;
+    margin-top: 2rem;
 }
 
 footer a {
@@ -254,7 +256,6 @@ footer p {
 
 .footer__flex__direccion__textoMapa__texto {
     margin: 1rem;
-    /* padding: 1rem; */
     font-size: 2rem;
     border-radius: 2rem;
 }
@@ -317,38 +318,31 @@ footer p {
 
 /* SOBRE NOSOTROS */
 
-.sobreNosotros__articulo {
-    margin: 2rem;
+.sobreNosotros {
     padding: 2rem;
     font-size: 2rem;
     border: 0.25rem solid #19323c;
     border-radius: 4rem;
-    margin-left: 1rem;
-    margin-bottom: 3rem;
-    margin-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .sobreNosotros__articulo__texto {
-    margin: 1rem;
     text-indent: 2rem;
     text-align: justify;
     line-height: 3rem;
+    padding: 1rem;
+    align-self: center;
 }
 
 .sobreNosotros__articulo__imagen {
-    border-radius: 4rem;
-    margin: 2rem;
-    width: 100%;
-    max-width: 50rem;
+    pad: 1rem;
     overflow: hidden;
+    align-self: center;
+    border-radius: 4rem;
 }
 
 
 .sobreNosotros__articulo__imagen img {
+
     width: 100%;
     height: 100%;
 }
@@ -445,19 +439,19 @@ footer p {
 /* BLOG */
 
 .blog__entrada {
-    margin: 1rem;
+    margin-bottom: 1rem;
     padding: 2rem;
     text-align: justify;
     font-size: 1.5rem;
     line-height: 2.5rem;
     border: 0.25rem solid #19323c;
     border-radius: 4rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .blog__entrada__texto {
     text-indent: 1.5rem;
+    padding: 1rem;
+    align-self: center;
 }
 
 .blog__entrada__texto a {
@@ -475,22 +469,21 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin: 1rem;
 }
 
 .blog__entrada__imagen {
-    justify-self: center;
     align-self: center;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4rem;
-    max-width: 45rem;
-    overflow: hidden;
 }
 
 
 .blog__entrada__imagen img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 4rem;
 }
 
 /* CONTACTO */
@@ -855,7 +848,7 @@ footer p {
     font-weight: bold;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
     .header__banner__nombre__icono {
         width: 4rem;
         height: 4rem;
@@ -880,10 +873,11 @@ footer p {
         width: 8rem;
         height: 8rem;
     }
+    
 
     .contacto__correo__formulario__completar {
         position: relative;
-        width: 25rem;
+        width: 20rem;
         margin-top: 3rem;
     }
 
@@ -1032,34 +1026,30 @@ footer p {
         height: 100%;
     }
 
-    /* SOBRE NOSOTROS */
-    .sobreNosotros__articulo {
-        display:inline-block;
-    }
-
-    .sobreNosotros__articulo__texto {
-        min-width: 50%;
-    }
-
-    .sobreNosotros__articulo__imagen {
-        max-width: 35rem;
-    }
-
-    .sobreNosotros__articulo__imagen--a {
-        float: right;
-    }
-
-    .sobreNosotros__articulo__imagen--b {
-        float: left;
-    }
-
     /* BLOG */
     .blog__entrada {
         font-size: 2rem;
         line-height: 3.25rem;
-        display: inline-block;
     }
 
+    /* .blog__entrada__imagen {
+        background-image: url(../images/imagen_placeholder3.png);
+        background-size: cover;
+        background-position: center;
+    } */
+
+    /* .blog__entrada__imagen img {
+        display: none;
+    } */
+
+    /* .blog__entrada__imagen--b {
+        background-image: url(../images/imagen_placeholder2.png);
+        background-size: cover;
+        background-position: center;
+    } */
+
+
+/* 
     .blog__entrada__texto {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -1088,7 +1078,7 @@ footer p {
 
     .blog__entrada__imagen--b {
         float: left;
-    }
+    } */
 
     /* CONTACTO */
     .contacto {
@@ -1140,7 +1130,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .blog__entrada__imagen {
         align-self: center;
         max-height: 40rem;
@@ -1151,11 +1141,7 @@ footer p {
         align-items: center;
         max-width: 50rem;
     }
-
-    .sobreNosotros__articulo__imagen {
-        max-width: 50rem;
-    }
-}
+} */
 
 @media  screen and (min-width: 1200px) {
     h1 {
@@ -1187,5 +1173,11 @@ footer p {
         grid-template-areas:
         "menu_desplegable redes_sociales encontranos";
         align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    .blog__entrada__imagen img {
+        max-height: 380px;
     }
 }
