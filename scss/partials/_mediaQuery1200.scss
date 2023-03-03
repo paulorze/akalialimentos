@@ -1,0 +1,34 @@
+@use './vars';
+
+@media  screen and (min-width: 1200px) {
+    h1 {
+        text-align: left;
+        text-indent: 4rem;
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .header__banner__nombre__titulo {
+        font-size: 4.5rem;
+    }
+
+    .header__navbar__menu__ul li {
+        font-size: 2.5rem;
+    }
+
+    .index__articulo__texto__contenido {
+        font-size: 2.5rem;
+    }
+
+    .footer__flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "menu_desplegable redes_sociales encontranos";
+        align-items: flex-start;
+    }
+}

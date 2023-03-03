@@ -1,0 +1,17 @@
+@use './vars';
+
+@media screen and (min-width: 600px) {
+    .header__banner__nombre__icono {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .header__banner__nombre__titulo {
+        font-size: 4rem;
+    }
+
+    .header__navbar__menu__icono {
+        width: 5rem;
+        height: 5rem;
+    }
+}

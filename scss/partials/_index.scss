@@ -1,0 +1,44 @@
+@use './vars';
+
+.index {
+    padding: 1rem;
+}
+
+.index__articulo {
+    border: 0.25rem solid vars.$color-font;
+    border-radius: 4rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.index__articulo__texto__titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+}
+
+.index__articulo__texto__contenido {
+    font-size: 2rem;
+    text-indent: 2rem;
+    text-align: justify;
+    margin: 1rem;
+}
+
+.index__articulo__imagen {
+    border-radius: 4rem;
+    overflow: hidden;
+    margin: 1rem;
+    max-width: 50rem;
+    align-self: center;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}

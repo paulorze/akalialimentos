@@ -1,0 +1,175 @@
+@use './vars';
+
+.contacto {
+    color: vars.$color-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.contacto__telefono {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 1rem;
+    text-indent: 1rem;
+    border: 0.25rem solid vars.$color-font;
+    border-radius: 4rem;    
+    padding: 2rem;
+
+    a {
+        color: blue;
+        text-decoration: underline;
+    }
+}
+
+.contacto__correo {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 1rem;
+    text-indent: 1rem;
+    border: 0.25rem solid vars.$color-font;
+    border-radius: 4rem;
+    padding: 2rem;
+}
+
+.contacto__correo__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-indent: 0;
+    width: 100%;
+}
+
+.contacto__correo__formulario__completar {
+    position: relative;
+    width: 30rem;
+    margin-top: 3rem;
+
+    span {
+        position: absolute;
+        left: 0;
+        bottom: 0rem;
+        padding: 1rem;
+        font-size: 2rem;
+        color: vars.$color-font;
+        letter-spacing: 00.05em;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+    i {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: vars.$color-main2;
+        border-radius: 4px;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    input {
+        position: relative;
+        width: 100%;
+        margin-top: 2rem;
+        padding: .75rem;
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        color: #19323c;
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        z-index: 10;
+
+        &:valid, &:focus {
+            ~span {
+                color: vars.$color-main2;
+                font-weight: bold;
+                transform: translateX(-10px) translateY(-34px);
+                font-size: 0,75em;
+            }
+
+            ~i {
+                height: 4rem;
+            }
+        }
+    }
+}
+
+.contacto__correo__formulario__cuerpo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    textarea {
+        width: 90%;
+        min-height: 15rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: vars.$color-main2;
+        font-size: 2rem;
+        color: vars.$color-font;
+        font-family: vars.$font-family;
+        resize: none;
+        box-sizing: border-box;
+        border-radius: 2rem;
+    }
+}
+
+.contacto__correo__formulario__botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton {
+    font-family: vars.$font-family;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: vars.$color-main2;
+    font-weight: bold;
+    position: relative;
+    transition: .3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: vars.$color-main2;
+        transition: .3s ease;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: vars.$color-main2;
+        transition: .3s ease;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: vars.$color-main2;
+        transition-delay: .3s;
+
+        &::before {
+            width: 100%;
+        }
+    }
+}

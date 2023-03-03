@@ -1,0 +1,77 @@
+@use './vars';
+
+.header {
+    background-color: vars.$color-main2;
+    position: sticky;
+    border-bottom: 0.25rem solid vars.$color-border;
+    box-shadow: 1px 1px 20px vars.$color-border;
+}
+
+.header__navbar__nombre {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__banner__nombre__icono {
+    height: 5rem;
+    width: 5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header__banner__nombre__titulo {
+    font-size: 3rem;
+    color: vars.$color-accent;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.header__navbar__menu__icono {
+    padding: 0; 
+    width: 4rem;
+    height: 4rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:active {
+        img {
+            filter: invert(1);
+        }
+    }
+}
+
+
+.header__navbar__menu__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    a {
+        color: vars.$color-main;
+        width: 100%;
+        height: 100%;
+
+        &:active {
+            color: vars.$color-font;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+                color: vars.$color-font;
+        }
+    }
+}

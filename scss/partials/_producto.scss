@@ -1,0 +1,146 @@
+@use './vars';
+
+.producto__principal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    color: vars.$color-font;
+    font-size: 2rem;
+    text-align: justify;
+    border: 0.25rem solid vars.$color-font;
+    border-radius: 4rem;
+    height: fit-content;
+}
+
+.producto__principal__descripcion {
+    height: 60%;
+    padding: 2rem;
+    margin-right: 1rem;
+
+    p {
+        text-indent: 2rem;
+    }
+}
+
+.producto__principal__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    padding: 1rem;
+
+    label {
+        display: block;
+        padding: 1rem;
+    }
+}
+
+.producto__principal__formulario__cantidad {
+    display: block;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0,5rem;
+}
+
+.producto__principal__formulario__tamaño {
+    display: block;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0,5rem;
+}
+
+.producto__principal__imagen {
+    width: auto;
+    height: 40%;
+    border-radius: 4rem;
+    overflow: hidden;
+    max-width: 434px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.producto__seguirComprando {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    border: 0.25rem solid vars.$color-font;
+    border-radius: 4rem;
+    margin-bottom: 3rem;
+    height: fit-content;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 254px;
+    width: 190px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    border: 0.25rem solid vars.$color-border;
+    box-shadow: 1px 1px 10px vars.$color-border;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card__image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.card__descripcion {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: vars.$color-main;
+    height: 50%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+
+.card__descripcion__nombre {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card__descripcion__precio {
+    font-size: 2rem;
+    line-height: 150%;
+    text-align: center;
+    font-weight: bold;
+}

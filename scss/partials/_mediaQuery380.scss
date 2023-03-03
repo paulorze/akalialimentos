@@ -1,0 +1,42 @@
+@use './vars';
+
+@media screen and (max-width: 380px) {
+    .header__banner__nombre__icono {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .header__banner__nombre__titulo {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .header__navbar__menu__icono {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .whatsapp {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .footer__flex__redes__ul {
+        li {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    
+
+    .contacto__correo__formulario__completar {
+        position: relative;
+        width: 20rem;
+        margin-top: 3rem;
+    }
+
+    .boton {
+        font-size: 1.5rem;
+    }
+
+}

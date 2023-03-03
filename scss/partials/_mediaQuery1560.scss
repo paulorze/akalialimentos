@@ -1,0 +1,7 @@
+@use './vars';
+
+@media screen and (min-width: 1560px) {
+    .blog__entrada__imagen img {
+        max-height: 380px;
+    }
+}
