@@ -76,7 +76,7 @@ footer {
 
     li {
         padding: .5rem;
-        border-radius: 2rem;
+        border: 2px solid vars.$color-main2;
 
         &:active {
             a{
@@ -102,7 +102,7 @@ footer {
     li {
         height: 10rem;
         width: 10rem;
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 10rem;
 
         img {
@@ -126,7 +126,6 @@ footer {
 .footer__flex__direccion__textoMapa__texto {
     margin: 1rem;
     font-size: 2rem;
-    border-radius: 2rem;
 }
 
 .footer__flex__direccion__textoMapa__mapa {

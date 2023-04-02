@@ -6,7 +6,7 @@
 
 .index__articulo {
     border: 0.25rem solid vars.$color-font;
-    border-radius: 4rem;
+    border-radius: 1rem;
     margin-left: 1rem;
     margin-bottom: 3rem;
     margin-right: 1rem;
@@ -31,14 +31,15 @@
 }
 
 .index__articulo__imagen {
-    border-radius: 4rem;
+    border-radius: 50%;
     overflow: hidden;
     margin: 1rem;
-    max-width: 50rem;
+    height: 25rem;
+    width: 25rem;
     align-self: center;
 
     img {
         height: auto;
-        width: 100%;
+        width: auto;
     }
 }

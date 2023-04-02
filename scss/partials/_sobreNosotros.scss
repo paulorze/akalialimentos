@@ -3,11 +3,12 @@
 .sobreNosotros {
     padding: 2rem;
     font-size: 2rem;
-    border: 0.25rem solid vars.$color-font;
-    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sobreNosotros__articulo__texto {
+.sobreNosotros__texto {
     text-indent: 2rem;
     text-align: justify;
     line-height: 3rem;
@@ -15,14 +16,14 @@
     align-self: center;
 }
 
-.sobreNosotros__articulo__imagen {
-    pad: 1rem;
+.sobreNosotros__imagen {
     overflow: hidden;
-    align-self: center;
-    border-radius: 4rem;
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
 
     img {
-        width: 100%;
+        width: auto;
         height: 100%;
     }
 }

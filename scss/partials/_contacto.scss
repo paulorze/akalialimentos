@@ -21,8 +21,9 @@
     padding: 2rem;
 
     a {
-        color: blue;
-        text-decoration: underline;
+        color: vars.$color-accent;
+        text-decoration: none;
+        font-size: 2.5rem;
     }
 }
 
@@ -83,7 +84,8 @@
         outline: none;
         box-shadow: none;
         border: none;
-        color: #19323c;
+        color: vars.$color-accent;
+        font-weight: bold;
         font-size: 2rem;
         letter-spacing: 0.05em;
         transition: 0.5s;
@@ -91,8 +93,7 @@
 
         &:valid, &:focus {
             ~span {
-                color: vars.$color-main2;
-                font-weight: bold;
+                color: vars.$color-accent;
                 transform: translateX(-10px) translateY(-34px);
                 font-size: 0,75em;
             }
@@ -114,13 +115,15 @@
         min-height: 15rem;
         margin-top: 2rem;
         padding: 1rem;
-        background-color: vars.$color-main2;
+        background-color: transparent;
         font-size: 2rem;
         color: vars.$color-font;
         font-family: vars.$font-family;
         resize: none;
         box-sizing: border-box;
-        border-radius: 2rem;
+        border-radius: 1rem;
+        border: 2px solid vars.$color-font;
+        outline: none;
     }
 }
 
@@ -136,7 +139,7 @@
     background: transparent;
     border: none;
     padding: 1em 1.5em;
-    color: vars.$color-main2;
+    color: vars.$color-accent;
     font-weight: bold;
     position: relative;
     transition: .3s ease;
@@ -148,7 +151,7 @@
         bottom: 0;
         height: 2px;
         width: 0;
-        background-color: vars.$color-main2;
+        background-color: vars.$color-accent;
         transition: .3s ease;
     }
 
@@ -159,13 +162,13 @@
         bottom: 0;
         height: 0;
         width: 100%;
-        background-color: vars.$color-main2;
+        background-color: vars.$color-accent;
         transition: .3s ease;
         z-index: -1;
     }
 
     &:hover {
-        color: vars.$color-main2;
+        color: vars.$color-accent;
         transition-delay: .3s;
 
         &::before {

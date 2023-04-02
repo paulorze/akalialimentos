@@ -31,4 +31,13 @@
         "menu_desplegable redes_sociales encontranos";
         align-items: flex-start;
     }
+
+    .sobreNosotros__texto {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .producto {
+        grid-template-columns: 5fr 0.25fr 3fr;
+    }
 }

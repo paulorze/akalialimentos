@@ -1,0 +1,8 @@
+@use './vars';
+
+@media screen and (min-width: 480px) {
+    .sobreNosotros__imagen {
+        width: 35rem;
+        height: 35rem;
+    }
+}

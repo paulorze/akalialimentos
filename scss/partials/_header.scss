@@ -10,6 +10,8 @@
 .header__navbar__nombre {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__banner__nombre__icono {
@@ -26,7 +28,7 @@
     font-size: 3rem;
     color: vars.$color-accent;
     font-weight: bold;
-    margin-left: 1rem;
+    margin: 0;
 }
 
 .header__navbar__menu__icono {
@@ -56,7 +58,8 @@
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
-        border-radius: 1rem;
+        padding: 1rem;
+        border: 2px solid vars.$color-main2;
     }
 
     a {
@@ -74,4 +77,8 @@
                 color: vars.$color-font;
         }
     }
+}
+
+.active {
+    color: vars.$color-accent;
 }
