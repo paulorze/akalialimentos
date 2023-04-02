@@ -39,7 +39,7 @@ footer {
     margin-top: 1rem;
 
     &:active {
-        color: vars.$color-font;
+        color: vars.$color-accent;
 
         img {
             filter: vars.$filter-light;
@@ -71,7 +71,7 @@ footer {
     font-size: 1.75rem;
 
     &:active {
-        color: vars.$color-font;
+        color: vars.$color-accent;
     }
 
     li {
@@ -80,7 +80,7 @@ footer {
 
         &:active {
             a{
-                color: vars.$color-font;
+                color: vars.$color-accent;
             }
         }
     }
@@ -91,13 +91,14 @@ footer {
 }
 
 .footer__flex__menu__links--active {
-    color: vars.$color-font;
+    color: vars.$color-accent;
 }
 
 .footer__flex__redes__ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 0;
 
     li {
         height: 10rem;

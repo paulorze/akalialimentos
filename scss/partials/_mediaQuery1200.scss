@@ -40,4 +40,17 @@
     .producto {
         grid-template-columns: 5fr 0.25fr 3fr;
     }
+
+    .errorpage {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    
+        img {
+            width: 100%;
+        }
+    }
 }

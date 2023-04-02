@@ -57,7 +57,7 @@
 
 .tienda__producto__nombre { 
     color: vars.$color-font;
-    background-color: vars.$color-accent;
+    background-color: vars.$color-accent2;
     width: 100%;
     font-size: 2rem;
     position: absolute;
@@ -68,7 +68,7 @@
 
 .tienda__producto__precio {
     color: vars.$color-font;
-    background-color: vars.$color-accent;
+    background-color: vars.$color-accent2;
     width: 100%;
     font-size: 2rem;
     font-weight: bold;

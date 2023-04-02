@@ -50,7 +50,7 @@ h3 {
 }
 
 .header {
-  background-color: #46494C;
+  background-color: #2F3133;
   position: sticky;
   border-bottom: 0.25rem solid #4C5C68;
   box-shadow: 1px 1px 20px #4C5C68;
@@ -74,7 +74,7 @@ h3 {
 
 .header__banner__nombre__titulo {
   font-size: 3rem;
-  color: #1985A1;
+  color: #22B0D4;
   font-weight: bold;
   margin: 0;
 }
@@ -96,13 +96,14 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 .header__navbar__menu__ul li {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   padding: 1rem;
-  border: 2px solid #46494C;
+  border: 2px solid #2F3133;
 }
 .header__navbar__menu__ul a {
   color: #DCDCDD;
@@ -110,14 +111,14 @@ h3 {
   height: 100%;
 }
 .header__navbar__menu__ul a:active {
-  color: black;
+  color: #22B0D4;
 }
 .header__navbar__menu__ul .nav-item .nav-link {
   color: black;
 }
 
 .active {
-  color: #1985A1;
+  color: #22B0D4 !important;
 }
 
 .whatsapp {
@@ -135,7 +136,7 @@ h3 {
 }
 
 footer {
-  background-color: #46494C;
+  background-color: #2F3133;
   color: #DCDCDD;
   height: fit-content;
   font-size: 1.5rem;
@@ -171,7 +172,7 @@ footer p {
   margin-top: 1rem;
 }
 .footer__flex__menu:active {
-  color: black;
+  color: #22B0D4;
 }
 .footer__flex__menu:active img {
   filter: invert(1);
@@ -200,14 +201,14 @@ footer p {
   font-size: 1.75rem;
 }
 .footer__flex__menu__links:active {
-  color: black;
+  color: #22B0D4;
 }
 .footer__flex__menu__links li {
   padding: 0.5rem;
-  border: 2px solid #46494C;
+  border: 2px solid #2F3133;
 }
 .footer__flex__menu__links li:active a {
-  color: black;
+  color: #22B0D4;
 }
 
 .footer__flex__menu__links--fijo {
@@ -215,13 +216,14 @@ footer p {
 }
 
 .footer__flex__menu__links--active {
-  color: black;
+  color: #22B0D4;
 }
 
 .footer__flex__redes__ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 .footer__flex__redes__ul li {
   height: 10rem;
@@ -362,7 +364,7 @@ footer p {
   position: absolute;
   left: 0;
   bottom: 0px;
-  background: #1985A1;
+  background: #22B0D4;
   color: black;
   height: 4rem;
   width: 100%;
@@ -379,7 +381,7 @@ footer p {
 
 .tienda__producto__nombre {
   color: black;
-  background-color: #1985A1;
+  background-color: #f5c6ee;
   width: 100%;
   font-size: 2rem;
   position: absolute;
@@ -390,7 +392,7 @@ footer p {
 
 .tienda__producto__precio {
   color: black;
-  background-color: #1985A1;
+  background-color: #f5c6ee;
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
@@ -432,7 +434,7 @@ footer p {
   padding: 2rem;
 }
 .contacto__telefono a {
-  color: #1985A1;
+  color: #22B0D4;
   text-decoration: none;
   font-size: 2.5rem;
 }
@@ -477,7 +479,7 @@ footer p {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #46494C;
+  background: #2F3133;
   border-radius: 4px;
   transition: 0.5s;
   pointer-events: none;
@@ -492,7 +494,7 @@ footer p {
   outline: none;
   box-shadow: none;
   border: none;
-  color: #1985A1;
+  color: #22B0D4;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.05em;
@@ -500,7 +502,7 @@ footer p {
   z-index: 10;
 }
 .contacto__correo__formulario__completar input:valid ~ span, .contacto__correo__formulario__completar input:focus ~ span {
-  color: #1985A1;
+  color: #22B0D4;
   transform: translateX(-10px) translateY(-34px);
   font-size: 0, 75em;
 }
@@ -541,7 +543,7 @@ footer p {
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: #1985A1;
+  color: #22B0D4;
   font-weight: bold;
   position: relative;
   transition: 0.3s ease;
@@ -553,7 +555,7 @@ footer p {
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #1985A1;
+  background-color: #22B0D4;
   transition: 0.3s ease;
 }
 .boton::after {
@@ -563,12 +565,12 @@ footer p {
   bottom: 0;
   height: 0;
   width: 100%;
-  background-color: #1985A1;
+  background-color: #22B0D4;
   transition: 0.3s ease;
   z-index: -1;
 }
 .boton:hover {
-  color: #1985A1;
+  color: #22B0D4;
   transition-delay: 0.3s;
 }
 .boton:hover::before {
@@ -716,6 +718,13 @@ footer p {
   font-weight: bold;
 }
 
+.errorpage {
+  width: 100%;
+}
+.errorpage img {
+  width: 100%;
+}
+
 @media screen and (max-width: 380px) {
   .header__banner__nombre__icono {
     width: 4rem;
@@ -787,7 +796,7 @@ footer p {
     padding: 0.5rem;
   }
   .header__navbar__menu__ul li:hover {
-    border-bottom: 2px solid #1985A1;
+    border-bottom: 2px solid #f5c6ee;
   }
   .whatsapp:hover {
     transform: scale(1.1);
@@ -816,7 +825,7 @@ footer p {
     justify-content: space-around;
   }
   .footer__flex__menu__links li:hover {
-    border-bottom: 2px solid #1985A1;
+    border-bottom: 2px solid #f5c6ee;
   }
   .footer__flex__menu__links--colapsable {
     display: none;
@@ -829,7 +838,7 @@ footer p {
     margin-top: 1rem;
   }
   .footer__flex__redes li:hover {
-    background-color: #C5C3C6;
+    background-color: #f5c6ee;
   }
   .footer__flex__direccion {
     font-size: 2rem;
@@ -841,8 +850,12 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+  .footer__flex__direccion__textoMapa__texto:hover {
+    text-decoration: underline;
+    text-decoration-color: #f5c6ee;
+  }
   .footer__flex__direccion__textoMapa__texto:active a {
-    color: black;
+    color: #22B0D4;
   }
   .footer__copyright {
     font-size: 1.5rem;
@@ -860,7 +873,7 @@ footer p {
   .index__articulo:hover {
     transform: scale(1.02);
     transition: 0.2s linear;
-    background-color: #C5C3C6;
+    background-color: #f5c6ee;
   }
   .index__articulo--impar {
     flex-direction: row-reverse;
@@ -905,8 +918,8 @@ footer p {
     bottom: -80px;
     height: 5rem;
     font-size: 2rem;
-    background-color: #46494C;
-    color: #1985A1;
+    background-color: #2F3133;
+    color: #22B0D4;
     display: inline-block;
   }
   .tienda__producto__nombre {
@@ -973,6 +986,17 @@ footer p {
   }
   .producto {
     grid-template-columns: 5fr 0.25fr 3fr;
+  }
+  .errorpage {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .errorpage img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1560px) {

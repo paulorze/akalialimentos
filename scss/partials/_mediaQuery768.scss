@@ -10,7 +10,7 @@
             padding: 0.5rem;
 
             &:hover {
-                border-bottom: 2px solid vars.$color-accent;
+                border-bottom: 2px solid vars.$color-accent2;
             }
             }
     }
@@ -50,7 +50,7 @@
 
         li {
             &:hover {
-                border-bottom: 2px solid vars.$color-accent;
+                border-bottom: 2px solid vars.$color-accent2;
             }
         }
     }
@@ -87,10 +87,14 @@
     }
 
     .footer__flex__direccion__textoMapa__texto {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: vars.$color-accent2;
+        }
 
         &:active {
             a {
-                color: vars.$color-font;
+                color: vars.$color-accent;
             }
         }
     }
