@@ -26,6 +26,10 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -78,128 +82,13 @@
                 Estos son todos los productos con los que contamos.
             </h2>
             <section class="tienda">
-                <article>
-                    <a href="./productos/producto1.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Alimento Húmedo a Base de Carne
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto2.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Alimento Húmedo a Base de Pollo
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto3.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Alimento Húmedo a Base de Pescado
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto4.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Mix de Carnes
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto1.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Alimento Húmedo a Base de Carne
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto2.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Alimento Húmedo a Base de Pollo
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto3.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Alimento Húmedo a Base de Pescado
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article>
-                    <a href="./productos/producto4.html">
-                        <div class="tienda__producto">
-                            <div class="tienda__producto__imagen">
-                                <img src="../images/imagen_producto.png" alt="Alimento Húmedo a Base de Carne">
-                            </div>
-                            <h3 class="tienda__producto__nombre">
-                                Mix de Carnes
-                            </h3>
-                            <span class="tienda__producto__precio">
-                                $6000
-                            </span>
-                        </div>
-                    </a>
-                </article>
             </section>
+            <div class="carrito__container carrito__inactivo">
+            </div>
         </main>
+        <div class="imagen__carrito">
+            <img src="../images/carrito.png" alt="Logo carrito.">
+        </div>
         <div class="whatsapp">
             <a href="https://api.whatsapp.com/send/?phone=5491187654321" target="_blank">
                 <img src="../images/icono_whatsapp.png" alt="Whatsapp">
@@ -326,6 +215,8 @@
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

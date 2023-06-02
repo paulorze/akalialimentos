@@ -155,18 +155,6 @@
         transition: .3s ease;
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        background-color: vars.$color-accent;
-        transition: .3s ease;
-        z-index: -1;
-    }
-
     &:hover {
         color: vars.$color-accent;
         transition-delay: .3s;

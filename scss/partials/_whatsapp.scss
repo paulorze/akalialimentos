@@ -12,3 +12,18 @@
         width: 100%;
     }
 }
+
+.imagen__carrito {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 7rem;
+    height: 7rem;
+    z-index: 2;
+    cursor: pointer;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

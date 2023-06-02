@@ -14,11 +14,6 @@
             }
             }
     }
-
-    .whatsapp:hover {
-        transform: scale(1.1);
-        transition: .2s linear;
-    }
     
     .footer__flex {
         display: grid;
@@ -108,6 +103,23 @@
         height: 8rem;
         bottom: 3rem;
         right: 3rem;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .2s linear;
+        }
+    }
+
+    .imagen__carrito {
+        width: 8rem;
+        height: 8rem;
+        bottom: 3rem;
+        left: 3rem;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .2s linear;
+        }
     }
 
     .index__articulo {
@@ -186,7 +198,6 @@
 
     .tienda__producto__precio {
         font-size: 3rem;
-        bottom: 0;
     }
 
     .producto {

@@ -135,6 +135,20 @@ h3 {
   width: 100%;
 }
 
+.imagen__carrito {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 7rem;
+  height: 7rem;
+  z-index: 2;
+  cursor: pointer;
+}
+.imagen__carrito img {
+  height: 100%;
+  width: 100%;
+}
+
 footer {
   background-color: #2F3133;
   color: #DCDCDD;
@@ -339,13 +353,13 @@ footer p {
 
 .tienda__producto {
   width: 25rem;
-  height: 30rem;
-  cursor: pointer;
+  height: 60rem;
   transition: all 120ms;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #DCDCDD;
+  background-color: #f5c6ee;
   padding: 1em;
   padding-bottom: 3.4em;
   position: relative;
@@ -358,25 +372,35 @@ footer p {
   border: 0.25rem solid #4C5C68;
   box-shadow: 1px 1px 10px #4C5C68;
 }
-.tienda__producto::after {
-  content: "Ver más";
-  padding-top: 1.15rem;
+.tienda__producto .boton {
+  grid-area: boton;
+  z-index: 1;
+  overflow: hidden;
   position: absolute;
-  left: 0;
-  bottom: 0px;
-  background: #22B0D4;
-  color: black;
-  height: 4rem;
-  width: 100%;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-weight: bolder;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-align: center;
-  display: none;
+  bottom: 0.5rem;
 }
-.tienda__producto:hover::after {
+.tienda__producto .boton::before {
+  transition: 0.5s ease;
+}
+.tienda__producto .boton::after {
+  content: "";
+  position: absolute;
+  left: -22rem;
+  bottom: -7rem;
+  height: 100%;
+  width: 100%;
+  background-color: #2F3133;
+  border-radius: 4px 4px 0 0;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.tienda__producto .boton:hover::after {
+  left: 0;
   bottom: 0;
+  background-color: #2F3133;
+  transition: 0.5s ease;
+  z-index: -1;
+  height: 100%;
 }
 
 .tienda__producto__nombre {
@@ -390,6 +414,41 @@ footer p {
   text-align: center;
 }
 
+.tienda__producto__descripcion {
+  color: black;
+  background-color: #f5c6ee;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 25rem;
+}
+
+.tienda__producto__botones {
+  color: black;
+  background-color: #f5c6ee;
+  width: 100%;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem 0 1rem;
+}
+.tienda__producto__botones .porcion {
+  grid-area: peso;
+  width: 9rem;
+  height: 3rem;
+  justify-self: center;
+}
+.tienda__producto__botones .cantidad {
+  grid-area: cantidad;
+  width: 6rem;
+  height: 3rem;
+  justify-self: center;
+}
+
 .tienda__producto__precio {
   color: black;
   background-color: #f5c6ee;
@@ -397,7 +456,7 @@ footer p {
   font-size: 2rem;
   font-weight: bold;
   position: absolute;
-  bottom: 0;
+  bottom: 15rem;
   text-align: center;
 }
 
@@ -412,6 +471,128 @@ footer p {
 .tienda__producto__imagen img {
   width: 100%;
   height: 100%;
+}
+
+.toasty {
+  font-size: 1.5rem;
+  border-radius: 4px;
+}
+
+.carrito__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #DCDCDD;
+  background-color: rgba(220, 220, 221, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrito__inactivo {
+  display: none;
+}
+
+.carrito {
+  position: relative;
+  border: 0.25rem solid #4C5C68;
+  box-shadow: 1px 1px 10px #4C5C68;
+  background-color: #DCDCDD;
+  z-index: 6;
+  padding: 1rem;
+  width: 80rem;
+}
+.carrito h3 {
+  text-align: center;
+}
+
+.carrito__cerrar {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  padding: 0;
+  color: red;
+  cursor: pointer;
+}
+
+.carrito__producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.carrito__producto p {
+  margin: 0;
+}
+.carrito__producto .boton {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+.carrito__producto .boton::before {
+  transition: 0.1s ease;
+}
+.carrito__producto .eliminar__producto {
+  color: red;
+}
+.carrito__producto .eliminar__producto:hover {
+  color: red;
+}
+.carrito__producto .eliminar__producto::before {
+  background-color: red;
+}
+
+.carrito__total {
+  text-align: right;
+}
+
+.carrito__botones {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.carrito__botones .boton {
+  z-index: 7;
+  overflow: hidden;
+}
+.carrito__botones .boton::before {
+  transition: 0.2s ease-in-out;
+}
+.carrito__botones .boton::after {
+  content: "";
+  position: absolute;
+  left: -22rem;
+  bottom: -7rem;
+  height: 100%;
+  width: 100%;
+  background-color: #2F3133;
+  border-radius: 4px 4px 0 0;
+  transition: 0.2s ease;
+  z-index: -1;
+}
+.carrito__botones .boton:hover::after {
+  left: 0;
+  bottom: 0;
+  background-color: #2F3133;
+  transition: 0.2s ease;
+  z-index: -1;
+  height: 100%;
+}
+.carrito__botones .vaciar {
+  color: red;
+}
+.carrito__botones .vaciar:hover {
+  color: red;
+}
+.carrito__botones .vaciar::before {
+  background-color: red;
+  transition: 0.2s ease;
 }
 
 .contacto {
@@ -557,17 +738,6 @@ footer p {
   width: 0;
   background-color: #22B0D4;
   transition: 0.3s ease;
-}
-.boton::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: #22B0D4;
-  transition: 0.3s ease;
-  z-index: -1;
 }
 .boton:hover {
   color: #22B0D4;
@@ -798,10 +968,6 @@ footer p {
   .header__navbar__menu__ul li:hover {
     border-bottom: 2px solid #f5c6ee;
   }
-  .whatsapp:hover {
-    transform: scale(1.1);
-    transition: 0.2s linear;
-  }
   .footer__flex {
     display: grid;
     align-items: flex-start;
@@ -866,6 +1032,20 @@ footer p {
     bottom: 3rem;
     right: 3rem;
   }
+  .whatsapp:hover {
+    transform: scale(1.1);
+    transition: 0.2s linear;
+  }
+  .imagen__carrito {
+    width: 8rem;
+    height: 8rem;
+    bottom: 3rem;
+    left: 3rem;
+  }
+  .imagen__carrito:hover {
+    transform: scale(1.1);
+    transition: 0.2s linear;
+  }
   .index__articulo {
     flex-direction: row;
     align-items: center;
@@ -927,7 +1107,6 @@ footer p {
   }
   .tienda__producto__precio {
     font-size: 3rem;
-    bottom: 0;
   }
   .producto {
     display: grid;
