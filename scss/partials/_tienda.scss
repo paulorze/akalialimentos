@@ -37,7 +37,7 @@
         bottom: 0.5rem;
 
         &::before {
-            transition: .5s ease;
+            transition: .3s ease;
         }
 
         &::after {
@@ -49,7 +49,7 @@
             width: 100%;
             background-color: vars.$color-main2;
             border-radius: 4px 4px 0 0;
-            transition: .5s ease;
+            transition: .3s ease;
             z-index: -1;
         }
 
@@ -58,14 +58,13 @@
                 left: 0;
                 bottom: 0;
                 background-color: vars.$color-main2;
-                transition: .5s ease;
+                transition: .3s ease;
                 z-index: -1;
                 height: 100%;
             }
         }
     }
 }
-
 
 .tienda__producto__nombre { 
     color: vars.$color-font;
@@ -157,8 +156,6 @@
     z-index: 5;
     background-color: vars.$color-main;
     background-color: rgba(220, 220, 221,0.6);
-    // background-color: vars.$color-main;
-    // display: none;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -380,7 +380,7 @@ footer p {
   bottom: 0.5rem;
 }
 .tienda__producto .boton::before {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .tienda__producto .boton::after {
   content: "";
@@ -391,14 +391,14 @@ footer p {
   width: 100%;
   background-color: #2F3133;
   border-radius: 4px 4px 0 0;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   z-index: -1;
 }
 .tienda__producto .boton:hover::after {
   left: 0;
   bottom: 0;
   background-color: #2F3133;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   z-index: -1;
   height: 100%;
 }

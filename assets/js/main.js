@@ -217,6 +217,9 @@ const verCarrito = ()=> {
                 modal.removeChild(hr);
                 modal.removeChild(productoContenedor);
                 let indice = verificarEnCarrito(producto)[1];
+                let nuevoTotalParcial = producto['cantidad'] * producto['precioUnidad'];
+                costoTotal -= nuevoTotalParcial;
+                document.querySelector('.carrito__total').innerHTML = `Total de la compra: <b>$${costoTotal}</b>`;
                 carrito.splice(indice,1);
                 localStorage.setItem('carrito',JSON.stringify(carrito));
             });
