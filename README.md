@@ -1,6 +1,6 @@
 # Akali Alimentos
 
-Akali Alimentos es un proyecto realizado para el curso de Desarrollo Web de CoderHouse. Se trata simplemente de un sitio web destinado a la venta de alimento para gatos en el cual intenté aplicar todos los contenidos vistos.
+Akali Alimentos se trata simplemente de un sitio web destinado a la venta de alimento para gatos.
 
 
 ## Contribuciones
@@ -13,7 +13,7 @@ Las Pull requests son bienvenidas. Para realizar grandes cambios, por favor comu
 
 # English
 
-Akali alimentos is a project I made for the 'Web Developer' course from CoderHouse. It's simply a web site geared towards cat food selling where I tried to apply every content we saw in the course.
+Akali alimentos is simply a web site geared towards cat food selling.
 
 ## Contributing
 
